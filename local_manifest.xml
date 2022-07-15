@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <!-- Remotes -->
+    <remote name="motorola-sm6150-devs"
+            fetch="ssh://git@github.com/motorola-sm6150-devs" />
+
+    <remote name="pranaya2005-gitlab"
+            fetch="ssh://git@gitlab.com/pranaya2005" />
+
+    <!-- Device -->
+    <project path="device/motorola/sm6150-common" name="android_device_motorola_sm6150-common" remote="motorola-sm6150-devs" />
+    <project path="device/motorola/hanoip" name="android_device_motorola_hanoip" remote="motorola-sm6150-devs" />
+    <project path="device/motorola/hanoip-kernel" name="android_device_motorola_hanoip-kernel" remote="motorola-sm6150-devs" />
+
+    <!-- Hardware -->
+    <project path="hardware/motorola" name="LineageOS/android_hardware_motorola" />
+
+    <!-- Vendor -->
+    <project path="vendor/motorola/sm6150-common" name="proprietary_vendor_motorola_sm6150-common" remote="pranaya2005-gitlab" />
+    <project path="vendor/motorola/hanoip" name="proprietary_vendor_motorola_hanoip" remote="pranaya2005-gitlab" />
+    <project path="vendor/motorola/hanoip-firmware" name="proprietary_vendor_motorola_hanoip-firmware" remote="pranaya2005-gitlab" />
+    <project path="vendor/motorola/hanoip-vendor" name="proprietary_vendor_motorola_hanoip-vendor" remote="pranaya2005-gitlab" />
+</manifest>
