@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <!-- Remotes -->
+    <remote name="dev"
+            fetch="ssh://git@github.com/motorola-sm6150-devs"
+            revision="lineage-20" />
+
+    <remote name="priv"
+            fetch="ssh://git@github.com/pranayadmn"
+            revision="main" />
+
+    <remote name="blobs"
+            fetch="ssh://git@gitlab.com/pranayadmn"
+            revision="lineage-20" />
+
+    <remote name="gapps"
+            fetch="ssh://git@gitlab.com/MindTheGapps"
+            revision="tau" />
+
+    <!-- Device -->
+    <project path="device/motorola/hanoip" name="android_device_motorola_hanoip" remote="dev" />
+    <project path="device/motorola/sm6150-common" name="android_device_motorola_sm6150-common" remote="dev" />
+
+    <!-- External -->
+    <project path="external/ih8sn" name="luk1337/ih8sn" revision="master" />
+
+    <!-- Hardware -->
+    <project path="hardware/motorola" name="LineageOS/android_hardware_motorola" revision="lineage-20" />
+
+    <!-- Kernel -->
+    <project path="kernel/motorola/sm6150" name="android_kernel_motorola_sm6150" remote="dev" />
+
+    <!-- System -->
+    <project path="system/qcom" name="LineageOS/android_system_qcom" revision="lineage-20" />
+
+    <!-- Vendor -->
+    <project path="vendor/certs" name="android_vendor_certs" remote="priv" />
+    <project path="vendor/extra" name="android_vendor_extra" remote="priv" />
+    <project path="vendor/gapps" name="vendor_gapps" clone-depth="1" remote="gapps" />
+    <project path="vendor/motorola/hanoip" name="proprietary_vendor_motorola_hanoip" remote="blobs" />
+    <project path="vendor/motorola/sm6150-common" name="proprietary_vendor_motorola_sm6150-common" remote="blobs" />
+</manifest>
